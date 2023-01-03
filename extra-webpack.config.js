@@ -1,7 +1,7 @@
 const singleSpaAngularWebpack = require('single-spa-angular/lib/webpack').default;
 
 module.exports = (config, options) => {
-  // Importações de modulos compartilhados
+  // Importações de módulos compartilhados
   config.externals = ["@gfa/gfa-infra"];
 
   const singleSpaWebpackConfig = singleSpaAngularWebpack(config, options);
